@@ -1,71 +1,246 @@
-body{
+body {
   background-color: rgb(255, 255, 255);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  .cabecalho {
+}
+
+.cabecalho {
   width: 100%;
   background-color: white;
   height: 80px;
-  }
-  
-  main{
+}
+
+main {
   margin: 0 auto;
   width: 100%;
   position: relative;
-  }
-  
-  #nomeescola{
+}
+
+.cabecalho p {
   color: black;
   float: left;
   font-size: 26px;
   margin-top: 22px;
   width: 32%;
   font-weight: bold;
-  }
-  
-  .logo{
-  float:  left;
+}
+
+.logo {
+  float: left;
   width: 8%;
-  }
-  
-  .header-2{
+}
+
+.header-2 {
   background: rgb(31,177,73);
   background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
   width: 100%;
   height: 35px;
-  }
-  
-  .linkstopo ul{
+}
+
+.linkstopo ul {
   text-align: right;
   padding-right: 70px;
-  }
-  
-  .linkstopo ul li{
+}
+
+.linkstopo ul li {
   display: inline-block;
   color: black;
-  margin-left: 30px; 
+  margin-left: 30px;
   height: 32px;
-  }
-  
-  .linkstopo ul li:hover{
+}
+
+.linkstopo ul li:hover {
   border-bottom: 3px solid rgb(255, 255, 93);
-  }
-  
-  .linkstopo ul li a:hover{
+}
+
+.linkstopo ul li a:hover {
   color: rgb(255, 255, 93);
-  }
-  
-  .linkstopo ul li a{
+}
+
+.linkstopo ul li a {
   color: black;
   text-decoration: none;
   font-size: 23px;
   font-weight: bold;
-  }
-  
-  .pfotosaut{
+}
+
+.custom-shape-divider-top-1716987987 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1716987987 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 700px;
+}
+
+.custom-shape-divider-top-1716987987 .shape-fill {
+  fill: #85FF0045;
+}
+
+.fundoverde {
+  top: 20px;
+}
+
+.pfotosaut {
+  transform: translate(-1%, -1%);
+  z-index: 1;
   text-align: center;
   margin-top: 70px;
   font-size: 3rem;
   font-weight: bold;
-  }
+}
+
+.escola {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 95%;
+  gap: 40px;
+}
+
+.textoescola {
+  background-color: #1CBB3F;
+  flex: 1;
+  padding: 2%;
+  margin-top: 200px;
+  height: 20%;
+}
+
+.textoescola h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.textoescola p {
+  font-size: 21px;
+  text-align: left;
+}
+
+.ultimos {
+  flex: 1;
+  margin-top: 130px;
+}
+
+.ultimos p {
+  font-size: 20px;
+}
+
+.ultimos h1 {
+  font-weight: bold;
+}
+
+.informes {
+  background-color: #A6A4A4;
+  height: auto;
+  width: 98%;
+  padding: 1%;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.curso {
+  width: 100%;
+  background-color: white;
+  height: 80px;
+}
+
+.curso p {
+  color: black;
+  float: left;
+  font-size: 26px;
+  margin-top: 141px;
+  margin-left: 30px;
+  width: 40%;
+  font-weight: bold;
+}
+
+.aninicio {
+  margin-top: 100px;
+  margin-left: 10px;
+  float: left;
+  width: 8%;
+}
+
+.imgcursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgcursos nav {
+  margin: 30px;
+  text-align: center;
+}
+
+.imgcursos a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgcursos img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.imgcursos p {
+  margin-top: 30px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  margin-top: 100px;
+  background-color: #898989;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+.footer-image {
+  width: 500px; /* Ajuste conforme necessário */
+  height: 100px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section a img {
+  width: 50px; /* Ajuste conforme necessário */
+  height: auto;
+  margin: 0 5px;
+  transition: transform 0.3s;
+}
+
+.footer-section a img:hover {
+  transform: scale(1.1);
+}
