@@ -47,52 +47,72 @@ body {
   margin-left: 10px;
 }
 
-.cursostxt {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 .container {
   display: flex;
-  align-items: flex-start;
-  max-width: 1200px;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+
+.quimica{
+  background: rgb(0,151,178);
+  background: linear-gradient(90deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 100%);
+}
+
+.secretariado{
+  background: rgb(0,244,255);
+  background: linear-gradient(90deg, rgba(0,244,255,1) 0%, rgba(0,108,253,1) 100%);
+}
+
+.txt{
+  background: rgb(237,0,0);
+  background: linear-gradient(90deg, rgba(237,0,0,1) 0%, rgba(219,159,159,1) 100%);
+}
+
+.ds{
+  background: rgb(51,121,255);
+  background: linear-gradient(90deg, rgba(51,121,255,1) 0%, rgba(25,35,62,1) 100%);
 }
 
 .txtcursos {
-  flex: 1;
+  flex: 1 1 60%;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.cursosimg {
+  flex: 1 1 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 33px;
 }
 
 .cursosimg img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.txtcursos p {
+  font-size: 25px;
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .txtcursos h1{
-  font-size: 50px;
+  padding-bottom: 10px;
+}
+
+.txtcursos h2{
+margin-bottom: 40px;
+margin-top: 30px;
 }
 
 #ds{
   font-size: 35px;
-}
-
-#tp{
-  font-size: 20px;
-  margin-top: 50px;
-}
-
-#fn{
-  margin-top: 60px;
-  font-size: 20px;
-}
-
-.cursosimg{
-  margin-top: 30px;
 }
 
 footer {
