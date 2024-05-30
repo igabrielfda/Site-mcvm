@@ -222,7 +222,7 @@ footer {
 }
 
 .footer-image {
-  width: 500px; /* Ajuste conforme necessário */
+  width: 500px;
   height: 100px;
 }
 
@@ -235,7 +235,7 @@ footer {
 }
 
 .footer-section a img {
-  width: 50px; /* Ajuste conforme necessário */
+  width: 50px;
   height: auto;
   margin: 0 5px;
   transition: transform 0.3s;

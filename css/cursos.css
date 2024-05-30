@@ -1,0 +1,134 @@
+body {
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.lkcmc ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-right: 100px;
+}
+
+.lkcmc ul li a:hover {
+  color: black;
+}
+
+.lkcmc ul li {
+  margin-left: 100px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.lkcmc ul li:first-child {
+  margin-left: 0;
+}
+
+.lkcmc a {
+  text-decoration: none;
+  color: #1B9736;
+}
+
+.header-2 {
+  background: rgb(31,177,73);
+  background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
+  width: 100%;
+  height: 35px;
+}
+
+.lgnome {
+  margin-left: 10px;
+}
+
+.cursostxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.txtcursos {
+  flex: 1;
+}
+
+.cursosimg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.txtcursos h1{
+  font-size: 50px;
+}
+
+#ds{
+  font-size: 35px;
+}
+
+#tp{
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#fn{
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.cursosimg{
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #898989;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section a img {
+  width: 48px;
+  height: 48px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
