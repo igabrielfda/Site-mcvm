@@ -1,6 +1,10 @@
 body {
   background-color: white;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -40,105 +44,76 @@ body {
   margin-left: 10px;
 }
 
-.header-2 {
-  background: rgb(31,177,73);
-  background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
+
+main {
   width: 100%;
-  height: 35px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 100px;
-}
-
-.procedimento-container {
-  display: flex;
-  width: 100%;
-  background-color: #85FF0033;
-  color: black;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.procedimento-container .procedimento {
-  flex: 1;
-  padding-right: 20px;
-}
-
-.procedimento-container img {
-  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 100%;
-  height: 60%;
-}
-
-.content-wrapper {
-  display: flex;
+  overflow: hidden;
+  padding: 20px;
   width: 100%;
-  margin-top: 30px;
-  box-sizing: border-box;
 }
 
-.inscricao, .matricula {
+.form-container {
   flex: 1;
   padding: 20px;
-  box-sizing: border-box;
 }
 
-.inscricao {
-  margin-right: 10px;
+.form-container h1 {
+  margin-top: 0;
 }
 
-.matricula {
-  margin-left: 10px;
-}
-
-nav h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-#in{
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 80px;
-}
-
-#mt{
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 80px;
-}
-
-nav p {
-  font-size: 27px;
-}
-
-.inscricao .list-container, .matricula .list-container {
-  background-color: rgb(255, 182, 122);
-  padding: 10px;
-  border-radius: 30px;
+.form-container label {
+  display: block;
   margin-top: 50px;
 }
 
-#transparente{
-  color: transparent;
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-.inscricao li, .matricula li {
-  font-size: 2em;
-  margin-bottom: 5px;
+.form-container button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-img {
+.form-container button:hover {
+  background-color: #4cae4c;
+}
+
+.photo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+.photo-container img {
   max-width: 100%;
-  height: auto;
+  border-radius: 8px;
 }
 
 footer {
@@ -179,5 +154,4 @@ footer {
   margin: 0 10px;
   vertical-align: middle;
 }
-
 
