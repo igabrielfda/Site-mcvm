@@ -18,7 +18,7 @@ body {
   display: flex;
   list-style-type: none;
   padding: 0;
-  margin-right: 100px;
+  margin-right:20px;
 }
 
 .lkmt ul li a:hover {
@@ -26,7 +26,7 @@ body {
 }
 
 .lkmt ul li {
-  margin-left: 100px;
+  margin-left: 80px;
   font-weight: bold;
   font-size: 20px;
 }
