@@ -7,74 +7,107 @@
   <link rel="stylesheet" href="css/cadastroaluno.css">
 </head>
 <body>
-  <header class="cmcmatricula">
-    <main id="cmcmt">
-        <div class="header">
-            <div class="lgnome">
-                <img src="img/logonome.png" alt="Logonome">
-            </div>
-            <div class="lkmt">
-                <ul>
-                    <li>
-                        <a href="Inicio.html">Voltar para o início</a>
-                    </li>
-                    <li>
-                      <a href="login.html">Já tenho cadastro - ENTRAR</a>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </main>
+<header class="cmcmatricula">
+  <!-- Seção de cabeçalho com a classe 'cmcmatricula' -->
+  <main id="cmcmt">
+    <!-- Elemento principal com o ID 'cmcmt' -->
+    <div class="header">
+      <!-- Div com a classe 'header' -->
+      <div class="lgnome">
+        <!-- Div com a classe 'lgnome' -->
+        <img src="img/logonome.png" alt="Logonome">
+        <!-- Imagem com o caminho 'img/logonome.png' e texto alternativo 'Logonome' -->
+      </div>
+      <div class="lkmt">
+        <!-- Div com a classe 'lkmt' -->
+        <ul>
+          <!-- Lista não ordenada -->
+          <li><a href="Inicio.html">Voltar para o início</a></li>
+          <!-- Link que redireciona para 'Inicio.html' com o texto 'Voltar para o início' -->
+        </ul>
+      </div>
+    </div>
+  </main>
 </header>
 <main>
+  <!-- Elemento principal para o conteúdo da página -->
   <nav>
-    <h1> Cadastre-se agora:</h1>
+    <!-- Elemento de navegação -->
+    <h1>Cadastre-se agora:</h1>
+    <!-- Cabeçalho de nível 1 com o texto 'Cadastre-se agora:' -->
   </nav>
   <div class="container">
+    <!-- Div com a classe 'container' para agrupar o conteúdo -->
     <div class="form-container">
+      <!-- Div com a classe 'form-container' para agrupar o formulário -->
       <form action="#" method="post">
+        <!-- Formulário com a ação '#' (não envia para lugar nenhum) e método POST -->
         <label for="nome">Nome:</label>
+        <!-- Rótulo para o campo de entrada 'nome' -->
         <input type="text" id="nome" name="nome" required>
+        <!-- Campo de entrada de texto para 'nome' com atributo 'required' -->
         
         <label for="sobrenome">Sobrenome:</label>
+        <!-- Rótulo para o campo de entrada 'sobrenome' -->
         <input type="text" id="sobrenome" name="sobrenome" required>
+        <!-- Campo de entrada de texto para 'sobrenome' com atributo 'required' -->
         
         <label for="email">Email:</label>
+        <!-- Rótulo para o campo de entrada 'email' -->
         <input type="email" id="email" name="email" required>
+        <!-- Campo de entrada de email para 'email' com atributo 'required' -->
         
-        <label for="Senha">Senha:</label>
-        <input type="password" id="Senha" name="senha" required>
+        <label for="senha">Senha:</label>
+        <!-- Rótulo para o campo de entrada 'senha' -->
+        <input type="password" id="senha" name="senha" required>
+        <!-- Campo de entrada de senha para 'senha' com atributo 'required' -->
         
         <button type="submit">Enviar</button>
+        <!-- Botão de envio do formulário -->
+        
       </form>
-    </div>
-    <div class="photo-container">
-      <img src="img/animação faleconosco.png" alt="Foto de Contato">
     </div>
   </div>
 </main>
 <footer>
+  <!-- Início do rodapé -->
   <div class="footer-container">
-      <div class="footer-section">
-          <h4>Escola Maria Carmem</h4>
-          <p>Rua Maria Ferreira, 150 - Pajuçara</p>
-          <p>Maracanaú/CE, 61932-450</p>
-      </div>
-      <div class="footer-section">
-          <h4>HORÁRIO DE ATENDIMENTO:</h4>
-          <p>Segunda a Sexta Manhã: 08:00h - 12:00h</p>
-          <p>Segunda a Sexta Tarde: 13:00h - 16:00h</p>
-      </div>
-      <div class="footer-section">
-          <h4>Redes Sociais</h4>
-          <a href="https://wa.me/+5585981447501" target="_blank">
-              <img src="img/whatsaap.png" alt="Whatsaap">
-          </a>
-          <a href="https://www.instagram.com/epmariacarmemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-              <img src="img/instagram.png" alt="Instagram">
-          </a>
-      </div>
+    <!-- Div com a classe 'footer-container' para agrupar o conteúdo do rodapé -->
+    <div class="footer-section">
+      <!-- Seção do rodapé -->
+      <h4>Escola Maria Carmem</h4>
+      <!-- Cabeçalho de nível 4 com o nome da escola -->
+      <p>Rua Maria Ferreira, 150 - Pajuçara</p>
+      <!-- Parágrafo com o endereço da escola -->
+      <p>Maracanaú/CE, 61932-450</p>
+      <!-- Parágrafo com a cidade e o CEP da escola -->
+    </div>
+    <div class="footer-section">
+      <!-- Seção do rodapé -->
+      <h4>HORÁRIO DE ATENDIMENTO:</h4>
+      <!-- Cabeçalho de nível 4 com o título 'HORÁRIO DE ATENDIMENTO:' -->
+      <p>Segunda a Sexta Manhã: 08:00h - 12:00h</p>
+      <!-- Parágrafo com o horário de atendimento da manhã -->
+      <p>Segunda a Sexta Tarde: 13:00h - 16:00h</p>
+      <!-- Parágrafo com o horário de atendimento da tarde -->
+    </div>
+    <div class="footer-section">
+      <!-- Seção do rodapé -->
+      <h4>Redes Sociais</h4>
+      <!-- Cabeçalho de nível 4 com o título 'Redes Sociais' -->
+      <a href="https://wa.me/+5585981447501" target="_blank">
+        <!-- Link para o WhatsApp com o alvo configurado para abrir em uma nova aba -->
+        <img src="img/whatsaap.png" alt="Whatsaap">
+        <!-- Imagem do ícone do WhatsApp -->
+      </a>
+      <a href="https://www.instagram.com/epmariacarmemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <!-- Link para o Instagram com o alvo configurado para abrir em uma nova aba -->
+        <img src="img/instagram.png" alt="Instagram">
+        <!-- Imagem do ícone do Instagram -->
+      </a>
+    </div>
   </div>
 </footer>
 </body>
 </html>
+<!-- Fim do documento HTML -->

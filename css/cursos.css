@@ -1,154 +1,180 @@
+/* Estilos gerais para o corpo da página */
 body {
-  background-color: white;
+  background-color: white; /* Define a cor de fundo do corpo da página como branca */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Define a família de fontes para ser usada */
 }
 
+/* Estilos para o cabeçalho principal */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  display: flex; /* Utiliza flexbox para o layout */
+  justify-content: space-between; /* Distribui os elementos ao longo do espaço disponível */
+  align-items: center; /* Centraliza verticalmente os itens */
+  padding: 10px; /* Adiciona espaçamento interno de 10px */
 }
 
+/* Estilos para a lista de navegação do cabeçalho */
 .lkcmc ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin-right: 100px;
+  display: flex; /* Utiliza flexbox para o layout da lista */
+  list-style-type: none; /* Remove os marcadores padrão da lista */
+  padding: 0; /* Remove o espaçamento interno da lista */
+  margin-right: 100px; /* Adiciona margem à direita de 100px */
 }
 
+/* Estilos para os links da lista de navegação quando em estado de hover */
 .lkcmc ul li a:hover {
-  color: black;
+  color: black; /* Muda a cor do texto para preto quando o mouse passa por cima */
 }
 
+/* Estilos para os itens da lista de navegação */
 .lkcmc ul li {
-  margin-left: 100px;
-  font-weight: bold;
-  font-size: 20px;
+  margin-left: 100px; /* Adiciona margem à esquerda de 100px para os itens da lista */
+  font-weight: bold; /* Define a fonte como negrito */
+  font-size: 20px; /* Define o tamanho da fonte como 20px */
 }
 
+/* Estilos para o primeiro item da lista de navegação */
 .lkcmc ul li:first-child {
-  margin-left: 0;
+  margin-left: 0; /* Remove a margem à esquerda do primeiro item da lista */
 }
 
+/* Estilos para os links da lista de navegação */
 .lkcmc a {
-  text-decoration: none;
-  color: #1B9736;
+  text-decoration: none; /* Remove a decoração de sublinhado dos links */
+  color: #1B9736; /* Define a cor do texto como verde (#1B9736) */
 }
 
+/* Estilos para o segundo cabeçalho */
 .header-2 {
-  background: rgb(31,177,73);
+  background: rgb(31,177,73); /* Define um fundo verde gradient (#1FB149) */
   background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
-  width: 100%;
-  height: 35px;
+  /* Cria um gradiente linear de verde para amarelo */
+  width: 100%; /* Define a largura como 100% */
+  height: 35px; /* Define a altura como 35px */
 }
 
+/* Estilos para a área do logotipo */
 .lgnome {
-  margin-left: 10px;
+  margin-left: 10px; /* Adiciona margem à esquerda de 10px */
 }
 
+/* Estilos para o contêiner principal */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  margin-top:30px;
-  margin-bottom: 30px;
+  display: flex; /* Utiliza flexbox para o layout */
+  flex-wrap: wrap; /* Permite que os itens sejam envoltos quando não cabem */
+  justify-content: space-between; /* Distribui os itens ao longo do espaço disponível */
+  padding: 20px; /* Adiciona espaçamento interno de 20px */
+  margin-top: 30px; /* Adiciona margem superior de 30px */
+  margin-bottom: 30px; /* Adiciona margem inferior de 30px */
 }
 
-.quimica{
-  background: rgb(0,151,178);
-  background: linear-gradient(90deg, rgba(0,151,178,1) 0%, rgba(126,217,87,1) 100%);
+/* Estilos específicos para o curso de química */
+.quimica {
+  background: #f0f0f0; /* Define o fundo como cinza claro (#f0f0f0) */
+  margin-top: 0; /* Remove a margem superior */
+  margin-bottom: 0%; /* Remove a margem inferior */
 }
 
-.secretariado{
-  background: rgb(0,244,255);
-  background: linear-gradient(90deg, rgba(0,244,255,1) 0%, rgba(0,108,253,1) 100%);
+/* Estilos específicos para o curso de secretariado */
+.secretariado {
+  background: #f0f0f0; /* Define o fundo como cinza claro (#f0f0f0) */
+  margin-top: 0; /* Remove a margem superior */
+  margin-bottom: 0%; /* Remove a margem inferior */
 }
 
-.txt{
-  background: rgb(237,0,0);
-  background: linear-gradient(90deg, rgba(237,0,0,1) 0%, rgba(219,159,159,1) 100%);
+/* Estilos específicos para o texto */
+.txt {
+  background: #f0f0f0; /* Define o fundo como cinza claro (#f0f0f0) */
+  margin-top: 0; /* Remove a margem superior */
+  margin-bottom: 0%; /* Remove a margem inferior */
 }
 
-.ds{
-  background: rgb(51,121,255);
-  background: linear-gradient(90deg, rgba(51,121,255,1) 0%, rgba(25,35,62,1) 100%);
+/* Estilos específicos para o desenvolvimento de sistemas */
+.ds {
+  background: #f0f0f0; /* Define o fundo como cinza claro (#f0f0f0) */
+  margin-top: 0; /* Remove a margem superior */
+  margin-bottom: 0%; /* Remove a margem inferior */
 }
 
+/* Estilos para o texto do curso */
 .txtcursos {
-  flex: 1 1 60%;
-  padding: 20px;
-  font-size: 20px;
+  flex: 1 1 60%; /* Define o crescimento, a encolhimento e a base do item flexível */
+  padding: 20px; /* Adiciona espaçamento interno de 20px */
+  font-size: 20px; /* Define o tamanho da fonte como 20px */
 }
-
+/* Estilos para as imagens dos cursos */
 .cursosimg {
-  flex: 1 1 10%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-  margin-top: 33px;
+  flex: 1 1 10%; /* Define o crescimento, a encolhimento e a base do item flexível */
+  display: flex; /* Utiliza flexbox para o layout */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  padding: 20px; /* Adiciona espaçamento interno de 20px */
+  margin-top: 33px; /* Adiciona margem superior de 33px */
 }
 
+/* Estilos para as imagens dentro do contêiner dos cursos */
 .cursosimg img {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 100%; /* Define a largura da imagem como 100% */
+  margin-bottom: 20px; /* Adiciona margem inferior de 20px */
 }
 
+/* Estilos específicos para os parágrafos dentro da seção de cursos */
 .txtcursos p {
-  font-size: 25px;
-  line-height: 1.5;
-  margin-bottom: 40px;
+  font-size: 25px; /* Define o tamanho da fonte como 25px */
+  line-height: 1.5; /* Define a altura da linha como 1.5 */
+  margin-bottom: 40px; /* Adiciona margem inferior de 40px */
 }
 
-.txtcursos h1{
-  padding-bottom: 10px;
+/* Estilos para o cabeçalho h1 dentro da seção de cursos */
+.txtcursos h1 {
+  padding-bottom: 10px; /* Adiciona preenchimento inferior de 10px */
 }
 
-.txtcursos h2{
-margin-bottom: 40px;
-margin-top: 30px;
+/* Estilos para o cabeçalho h2 dentro da seção de cursos */
+.txtcursos h2 {
+  margin-bottom: 40px; /* Adiciona margem inferior de 40px */
+  margin-top: 30px; /* Adiciona margem superior de 30px */
 }
 
-#ds{
-  font-size: 35px;
+/* Estilos específicos para o parágrafo com o ID 'ds' dentro da seção de cursos */
+#ds {
+  font-size: 35px; /* Define o tamanho da fonte como 35px */
 }
 
+/* Estilos para o rodapé */
 footer {
-  background-color: #898989;
-  padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
+  margin-top: 0; /* Remove a margem superior */
+  background-color: #898989; /* Define o fundo como cinza escuro (#898989) */
+  color: white; /* Define a cor do texto como branco */
+  padding: 20px 0; /* Adiciona espaçamento interno de 20px na parte superior e inferior */
+  text-align: center; /* Centraliza o texto */
 }
 
+/* Estilos para o contêiner do rodapé */
 .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: flex; /* Utiliza flexbox para o layout */
+  justify-content: space-around; /* Distribui os itens ao redor com espaço igual */
+  align-items: center; /* Centraliza os itens verticalmente */
+  flex-wrap: wrap; /* Permite que os itens sejam envoltos quando não cabem */
 }
 
+/* Estilos para as seções individuais dentro do rodapé */
 .footer-section {
-  flex: 1;
-  min-width: 200px;
+  margin: 10px; /* Adiciona margem de 10px em todos os lados */
 }
 
+/* Estilos para as imagens dentro das seções do rodapé */
+.footer-image {
+  width: 500px; /* Define a largura da imagem como 500px */
+  height: 100px; /* Define a altura da imagem como 100px */
+}
+
+/* Estilos para os cabeçalhos h4 dentro das seções do rodapé */
 .footer-section h4 {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Adiciona margem inferior de 10px */
 }
 
+/* Estilos para os parágrafos dentro das seções do rodapé */
 .footer-section p {
-  margin: 5px 0;
-}
-
-.footer-section a img {
-  width: 48px;
-  height: 48px;
-  margin: 0 10px;
-  vertical-align: middle;
+  margin: 5px 0; /* Adiciona margem de 5px acima e abaixo */
 }

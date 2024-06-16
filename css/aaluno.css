@@ -1,135 +1,181 @@
-
 body {
-    background-color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-  
-  .lkmt ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin-right: 100px;
-  }
-  
-  .lkmt ul li a:hover {
-    color: black;
-  }
-  
-  .lkmt ul li {
-    margin-left: 100px;
-    font-weight: bold;
-    font-size: 20px;
-  }
-  
-  .lkmt ul li:first-child {
-    margin-left: 0;
-  }
-  
-  .lkmt a {
-    text-decoration: none;
-    color: #1B9736;
-  }
-  
-  .lgnome {
-    margin-left: 10px;
-  }
-  
-  .header-2 {
-    background: rgb(31,177,73);
-    background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
-    width: 100%;
-    height: 35px;
-  }
-  
-.container {
-  margin-top: 50px;
-  max-width: 100%;
-
+  background-color: white;
+  /* Define a cor de fundo do corpo da página como branco */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* Define a família de fontes a ser usada no texto da página */
 }
 
-.content-container{
-  margin-top: 100px;
+.header {
   display: flex;
+  /* Define a exibição da div como flexível */
+  justify-content: space-between;
+  /* Distribui o espaço disponível igualmente entre os itens */
+  align-items: center;
+  /* Alinha os itens ao centro verticalmente */
+  padding: 10px;
+  /* Adiciona um preenchimento de 10 pixels ao redor da div */
+}
+
+.lkmt ul {
+  display: flex;
+  /* Define a exibição da lista como flexível */
+  list-style-type: none;
+  /* Remove as marcas de estilo padrão da lista */
+  padding: 0;
+  /* Remove o preenchimento padrão da lista */
+  margin-right: 100px;
+  /* Adiciona uma margem à direita de 100 pixels */
+}
+
+.lkmt ul li a:hover {
+  color: black;
+  /* Altera a cor do texto para preto ao passar o mouse sobre o link */
+}
+
+.lkmt ul li {
+  margin-left: 100px;
+  /* Adiciona uma margem à esquerda de 100 pixels ao item da lista */
+  font-weight: bold;
+  /* Define o peso da fonte como negrito */
+  font-size: 20px;
+  /* Define o tamanho da fonte como 20 pixels */
+}
+
+.lkmt ul li:first-child {
+  margin-left: 0;
+  /* Remove a margem à esquerda do primeiro item da lista */
+}
+
+.lkmt a {
+  text-decoration: none;
+  /* Remove a decoração padrão do texto (sublinhado) dos links */
+  color: #1B9736;
+  /* Define a cor do texto dos links */
+}
+
+.lgnome {
+  margin-left: 10px;
+  /* Adiciona uma margem à esquerda de 10 pixels */
+}
+
+.header-2 {
+  background: rgb(31,177,73);
+  /* Define a cor de fundo da div como verde */
+  background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
+  /* Define um gradiente linear de fundo na div */
+  width: 100%;
+  /* Define a largura da div como 100% do contêiner pai */
+  height: 35px;
+  /* Define a altura da div como 35 pixels */
+}
+
+.container {
+  margin-top: 50px;
+  /* Adiciona uma margem superior de 50 pixels */
+  max-width: 100%;
+  /* Define a largura máxima da div como 100% */
+}
+
+.content-container {
+  margin-top: 100px;
+  /* Adiciona uma margem superior de 100 pixels */
+  display: flex;
+  /* Define a exibição da div como flexível */
   justify-content: center;
+  /* Centraliza os itens horizontalmente */
   margin-left: 300px;
+  /* Adiciona uma margem à esquerda de 300 pixels */
 }
 
 .h1i {
-    text-align: center;
-    font-size: 25px;
+  text-align: center;
+  /* Alinha o texto ao centro */
+  font-size: 25px;
+  /* Define o tamanho da fonte como 25 pixels */
 }
 
 .pdf-container {
-    padding: 20px;
-    background-color: #f0f0f0;
+  padding: 20px;
+  /* Adiciona um preenchimento de 20 pixels */
+  background-color: #f0f0f0;
+  /* Define a cor de fundo como cinza claro */
 }
 
 .pdf-container h1 {
-    margin-top: 0;
-    font-size: 24px;
+  margin-top: 0;
+  /* Remove a margem superior do cabeçalho */
+  font-size: 24px;
+  /* Define o tamanho da fonte como 24 pixels */
 }
 
 .pdf-container ul {
-    padding-left: 20px;
+  padding-left: 20px;
+  /* Adiciona um preenchimento à esquerda de 20 pixels */
 }
 
 .pdf-container ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  /* Adiciona uma margem inferior de 10 pixels aos itens da lista */
 }
 
 .pdf-container ul li a {
-    text-decoration: none;
-    color: #1B9736;
+  text-decoration: none;
+  /* Remove a decoração padrão do texto (sublinhado) dos links */
+  color: #1B9736;
+  /* Define a cor do texto dos links */
 }
 
 .image-container img {
-    width: 70%;
-    height: auto;
-    margin-top: -40px;
+  width: 70%;
+  /* Define a largura da imagem como 70% do contêiner pai */
+  height: auto;
+  /* Define a altura da imagem como automática para manter a proporção */
+  margin-top: -40px;
+  /* Adiciona uma margem superior negativa de 40 pixels */
 }
 
 footer {
-    background-color: #898989;
-    padding: 20px 0;
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    margin-top: 100px;
+  margin-top: 100px;
+  /* Adiciona uma margem superior de 100 pixels */
+  background-color: #898989;
+  /* Define a cor de fundo do rodapé como cinza */
+  color: white;
+  /* Define a cor do texto como branco */
+  padding: 20px 0;
+  /* Adiciona um preenchimento vertical de 20 pixels */
+  text-align: center;
+  /* Alinha o texto ao centro */
 }
 
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 40px;
-    flex-wrap: wrap;
+  display: flex;
+  /* Define a exibição da div como flexível */
+  justify-content: space-around;
+  /* Distribui o espaço disponível igualmente entre os itens */
+  align-items: center;
+  /* Alinha os itens ao centro verticalmente */
+  flex-wrap: wrap;
+  /* Permite que os itens flexíveis sejam quebrados em várias linhas */
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 200px;
+  margin: 10px;
+  /* Adiciona uma margem de 10 pixels ao redor da seção do rodapé */
+}
+
+.footer-image {
+  width: 500px;
+  /* Define a largura da imagem como 500 pixels */
+  height: 100px;
+  /* Define a altura da imagem como 100 pixels */
 }
 
 .footer-section h4 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+  /* Adiciona uma margem inferior de 10 pixels aos cabeçalhos de nível 4 */
 }
 
 .footer-section p {
-    margin: 5px 0;
-}
-
-.footer-section a img {
-    width: 48px;
-    height: 48px;
-    margin: 0 10px;
-    vertical-align: middle;
+  margin: 5px 0;
+  /* Adiciona margens verticais de 5 pixels aos parágrafos */
 }

@@ -1,49 +1,77 @@
 body {
   background-color: white;
+  /* Define a cor de fundo do corpo da página como branco */
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+  /* Define a família de fontes a ser usada no texto da página */
 }
 
 .header {
   display: flex;
+  /* Define a exibição da div como flexível */
   justify-content: space-between;
+  /* Distribui o espaço disponível igualmente entre os itens */
   align-items: center;
+  /* Alinha os itens ao centro verticalmente */
   padding: 10px;
+  /* Adiciona um preenchimento de 10 pixels ao redor da div */
 }
 
 .lkmt ul {
   display: flex;
+  /* Define a exibição da lista como flexível */
   list-style-type: none;
+  /* Remove as marcas de estilo padrão da lista */
   padding: 0;
-  margin-right:20px;
+  /* Remove o preenchimento padrão da lista */
+  margin-right: 100px;
+  /* Adiciona uma margem à direita de 100 pixels */
 }
 
 .lkmt ul li a:hover {
   color: black;
+  /* Altera a cor do texto para preto ao passar o mouse sobre o link */
 }
 
 .lkmt ul li {
-  margin-left: 80px;
+  margin-left: 100px;
+  /* Adiciona uma margem à esquerda de 100 pixels ao item da lista */
   font-weight: bold;
+  /* Define o peso da fonte como negrito */
   font-size: 20px;
+  /* Define o tamanho da fonte como 20 pixels */
 }
 
 .lkmt ul li:first-child {
   margin-left: 0;
+  /* Remove a margem à esquerda do primeiro item da lista */
 }
 
 .lkmt a {
   text-decoration: none;
+  /* Remove a decoração padrão do texto (sublinhado) dos links */
   color: #1B9736;
+  /* Define a cor do texto dos links */
 }
 
 .lgnome {
   margin-left: 10px;
+  /* Adiciona uma margem à esquerda de 10 pixels */
 }
 
+.header-2 {
+  background: rgb(31,177,73);
+  /* Define a cor de fundo da div como verde */
+  background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
+  /* Define um gradiente linear de fundo na div */
+  width: 100%;
+  /* Define a largura da div como 100% do contêiner pai */
+  height: 35px;
+  /* Define a altura da div como 35 pixels */
+}
+
+h1{
+  text-align: center;
+}
 
 main {
   width: 100%;
@@ -52,106 +80,143 @@ main {
   padding: 0 20px;
   box-sizing: border-box;
 }
+/* Estilo para o elemento <main>:
+   - Largura de 100% do seu contêiner
+   - Largura máxima de 1200px
+   - Margens superior e inferior de 20px, margem automática nas laterais para centralização
+   - Preenchimento interno de 0 nas laterais e 20px nas extremidades
+   - Ajuste para o modelo de caixa: padding e border incluídos no tamanho total */
 
 .container {
+  margin: 20px auto;
   display: flex;
-  background-color: white;
+  flex-direction: column;
+  background-color: #85FF0045;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
+  box-shadow: 0 0 10px rgba(158, 48, 48, 0.1);
   overflow: hidden;
-  padding: 20px;
   width: 100%;
+  max-width: 600px;
 }
+/* Estilo para .container:
+   - Margem de 20px nas laterais e automática nas superior e inferior para centralização
+   - Exibição como um contêiner de coluna flexível
+   - Cor de fundo com transparência (#85FF0045)
+   - Borda arredondada com raio de 8px
+   - Sombra com deslocamento 0 e desfoque 10px, cor definida com transparência rgba(158, 48, 48, 0.1)
+   - Ocultação de conteúdo além dos limites com overflow: hidden
+   - Largura de 100% e largura máxima de 600px */
 
 .form-container {
-  flex: 1;
   padding: 20px;
 }
+/* Estilo para .form-container:
+   - Preenchimento interno de 20px */
 
 .form-container h1 {
   margin-top: 0;
 }
+/* Estilo para os cabeçalhos h1 dentro de .form-container:
+   - Margem superior zerada */
 
 .form-container label {
   display: block;
-  margin-top: 50px;
+  margin-top: 20px;
 }
+/* Estilo para os rótulos dentro de .form-container:
+   - Exibição como bloco (cada rótulo ocupa uma linha separada)
+   - Margem superior de 20px */
 
-.form-container input,
-.form-container textarea {
+.form-container input {
   width: 100%;
   padding: 10px;
   margin-top: 5px;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   box-sizing: border-box;
 }
+/* Estilo para os campos de entrada dentro de .form-container:
+   - Largura de 100% do contêiner
+   - Preenchimento interno de 10px
+   - Margem superior de 5px
+   - Borda arredondada com raio de 4px
+   - Borda sólida preta com espessura de 1px
+   - Ajuste para o modelo de caixa: padding e border incluídos no tamanho total */
 
 .form-container button {
-  display: inline-block;
-  margin-top: 20px;
+  display: block;
+  margin: 20px auto;
   padding: 10px 15px;
-  background-color: #5cb85c;
+  background-color: #1B9736;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
+/* Estilo para os botões dentro de .form-container:
+   - Exibição como bloco (ocupando toda a largura disponível)
+   - Margem de 20px nas laterais e automática nas superior e inferior para centralização
+   - Preenchimento interno de 10px na vertical e 15px na horizontal
+   - Cor de fundo verde (#1B9736)
+   - Cor do texto branca
+   - Sem borda
+   - Borda arredondada com raio de 4px
+   - Cursor do mouse alterado para indicar interatividade */
 
 .form-container button:hover {
-  background-color: #4cae4c;
+  background-color: #000000;
 }
-
-.photo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f9f9;
-  padding: 20px;
-}
-
-.photo-container img {
-  max-width: 100%;
-  border-radius: 8px;
-}
+/* Estilo para os botões dentro de .form-container quando passa o mouse:
+   - Mudança de cor de fundo para preto (#000000) */
 
 footer {
-  background-color: #898989;
-  padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
   margin-top: 100px;
+  background-color: #898989;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
 }
+/* Estilo para o rodapé:
+   - Margem superior de 100px
+   - Cor de fundo cinza (#898989)
+   - Cor do texto branca
+   - Preenchimento interno de 20px na vertical e 0 nas laterais
+   - Alinhamento central do texto */
 
 .footer-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
+/* Estilo para .footer-container:
+   - Exibição como um contêiner flexível
+   - Alinhamento central dos itens horizontalmente com espaçamento uniforme
+   - Itens centralizados verticalmente
+   - Quebra de linha automática */
 
 .footer-section {
-  flex: 1;
-  min-width: 200px;
+  margin: 10px;
 }
+/* Estilo para .footer-section:
+   - Margem de 10px */
+
+.footer-image {
+  width: 500px;
+  height: 100px;
+}
+/* Estilo para .footer-image:
+   - Largura de 500px
+   - Altura de 100px */
 
 .footer-section h4 {
   margin-bottom: 10px;
 }
+/* Estilo para os cabeçalhos h4 dentro de .footer-section:
+   - Margem inferior de 10px */
 
 .footer-section p {
   margin: 5px 0;
 }
-
-.footer-section a img {
-  width: 48px;
-  height: 48px;
-  margin: 0 10px;
-  vertical-align: middle;
-}
-
+/* Estilo para os parágrafos dentro de .footer-section:
+   - Margem de 5px na vertical e 0 na horizontal */

@@ -1,157 +1,159 @@
+/* Estilos gerais para o corpo da página */
 body {
-  background-color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+  background-color: white; /* Define o fundo da página como branco */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Define a fonte padrão para o corpo do texto */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  display: flex; /* Usa layout flexível para organizar os elementos em coluna */
+  flex-direction: column; /* Direção dos itens: coluna */
 }
 
+/* Estilos para o cabeçalho */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  display: flex; /* Usa layout flexível para organizar os elementos do cabeçalho */
+  justify-content: space-between; /* Distribui os itens do cabeçalho uniformemente, com espaço entre eles */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding: 10px; /* Adiciona espaçamento interno de 10px ao redor do cabeçalho */
 }
 
+/* Estilos para a navegação no cabeçalho */
 .lkmt ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin-right: 100px;
+  display: flex; /* Usa layout flexível para os itens da lista */
+  list-style-type: none; /* Remove os marcadores de lista padrão */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  margin-right: 100px; /* Adiciona margem à direita para os itens da lista */
 }
 
 .lkmt ul li a:hover {
-  color: black;
+  color: black; /* Muda a cor do texto para preto quando o link é hover */
 }
 
 .lkmt ul li {
-  margin-left: 100px;
-  font-weight: bold;
-  font-size: 20px;
+  margin-left: 100px; /* Adiciona margem à esquerda para os itens da lista */
+  font-weight: bold; /* Define o peso da fonte como negrito */
+  font-size: 20px; /* Define o tamanho da fonte como 20 pixels */
 }
 
 .lkmt ul li:first-child {
-  margin-left: 0;
+  margin-left: 0; /* Remove a margem à esquerda do primeiro item da lista */
 }
 
 .lkmt a {
-  text-decoration: none;
-  color: #1B9736;
+  text-decoration: none; /* Remove a decoração de texto (sublinhado) dos links */
+  color: #1B9736; /* Define a cor do texto para um verde específico */
 }
 
 .lgnome {
-  margin-left: 10px;
+  margin-left: 10px; /* Adiciona margem à esquerda de 10px ao logotipo/nome */
 }
 
-
+/* Estilos para o conteúdo principal */
 main {
-  width: 100%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+  width: 100%; /* Define a largura máxima como 100% */
+  max-width: 1200px; /* Define a largura máxima como 1200 pixels */
+  margin: 20px auto; /* Adiciona margem de 20px acima e abaixo, e centraliza horizontalmente */
+  padding: 0 20px; /* Adiciona preenchimento de 0 nas laterais e 20px acima e abaixo */
+  box-sizing: border-box; /* Inclui preenchimento e borda no cálculo do tamanho total */
 }
 
+/* Estilos para o container que envolve o formulário e a foto */
 .container {
-  display: flex;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
-  overflow: hidden;
-  padding: 20px;
-  width: 100%;
+  display: flex; /* Usa layout flexível para organizar os elementos dentro do container */
+  background-color: white; /* Define o fundo do container como branco */
+  border-radius: 8px; /* Adiciona bordas arredondadas com raio de 8px */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao container */
+  max-width: 100%; /* Define a largura máxima como 100% */
+  overflow: hidden; /* Esconde qualquer conteúdo que exceda o container */
+  padding: 20px; /* Adiciona preenchimento interno de 20px */
+  width: 100%; /* Define a largura como 100% */
 }
 
+/* Estilos para o container do formulário */
 .form-container {
-  flex: 1;
-  padding: 20px;
+  flex: 1; /* Ocupa todo o espaço disponível no container */
+  padding: 20px; /* Adiciona preenchimento interno de 20px */
 }
 
 .form-container h1 {
-  margin-top: 0;
+  margin-top: 0; /* Remove a margem superior do título do formulário */
 }
 
 .form-container label {
-  display: block;
-  margin-top: 50px;
+  display: block; /* Exibe os rótulos dos campos em bloco */
+  margin-top: 50px; /* Adiciona margem superior de 50px aos rótulos */
 }
 
 .form-container input,
 .form-container textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  width: 100%; /* Define a largura dos campos de entrada como 100% */
+  padding: 10px; /* Adiciona preenchimento interno de 10px */
+  margin-top: 5px; /* Adiciona margem superior de 5px */
+  border-radius: 4px; /* Adiciona bordas arredondadas com raio de 4px */
+  border: 1px solid #ccc; /* Adiciona uma borda sólida de 1px com cor cinza */
+  box-sizing: border-box; /* Inclui preenchimento e borda no cálculo do tamanho total */
 }
 
 .form-container button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 15px;
-  background-color: #5cb85c;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  display: inline-block; /* Exibe o botão como bloco em linha */
+  margin-top: 20px; /* Adiciona margem superior de 20px ao botão */
+  padding: 10px 15px; /* Adiciona preenchimento interno de 10px acima e abaixo e 15px nas laterais */
+  background-color: #5cb85c; /* Define a cor de fundo do botão como verde */
+  color: white; /* Define a cor do texto como branco */
+  border: none; /* Remove a borda do botão */
+  border-radius: 4px; /* Adiciona bordas arredondadas com raio de 4px */
+  cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
 }
 
 .form-container button:hover {
-  background-color: #4cae4c;
+  background-color: #4cae4c; /* Altera a cor de fundo do botão para um tom mais escuro de verde quando hover */
 }
 
+/* Estilos para o container da foto */
 .photo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f9f9f9;
-  padding: 20px;
+  display: flex; /* Usa layout flexível para organizar os elementos dentro do container da foto */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  background-color: #f9f9f9; /* Define o fundo do container da foto como cinza claro */
+  padding: 20px; /* Adiciona preenchimento interno de 20px */
 }
 
 .photo-container img {
-  max-width: 100%;
-  border-radius: 8px;
+  max-width: 100%; /* Define a largura máxima da imagem como 100% */
+  border-radius: 8px; /* Adiciona bordas arredondadas com raio de 8px à imagem */
 }
 
+/* Estilos para o rodapé */
 footer {
-  background-color: #898989;
-  padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  margin-top: 100px;
+  margin-top: 100px; /* Adiciona margem superior de 100px ao rodapé */
+  background-color: #898989; /* Define o fundo do rodapé como cinza escuro */
+  color: white; /* Define a cor do texto como branco */
+  padding: 20px 0; /* Adiciona preenchimento interno de 20px acima e abaixo */
+  text-align: center; /* Centraliza o texto no rodapé */
 }
 
 .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: flex; /* Usa layout flexível para organizar os elementos dentro do container do rodapé */
+  justify-content: space-around; /* Distribui os itens do rodapé uniformemente com espaço ao redor */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  flex-wrap: wrap; /* Permite que os itens do rodapé quebrem para uma nova linha quando necessário */
 }
 
 .footer-section {
-  flex: 1;
-  min-width: 200px;
+  margin: 10px; /* Adiciona margem de 10px ao redor de cada seção do rodapé */
 }
 
+/* Estilos opcionais para uma imagem no rodapé */
+.footer-image {
+  width: 500px; /* Define a largura da imagem como 500 pixels */
+  height: 100px; /* Define a altura da imagem como 100 pixels */
+}
+
+/* Estilos para os cabeçalhos das seções do rodapé */
 .footer-section h4 {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Adiciona margem inferior de 10px aos cabeçalhos das seções do rodapé */
 }
 
+/* Estilos para os parágrafos nas seções do rodapé */
 .footer-section p {
-  margin: 5px 0;
+  margin: 5px 0; /* Adiciona margem de 5px acima e abaixo dos parágrafos nas seções do rodapé */
 }
-
-.footer-section a img {
-  width: 48px;
-  height: 48px;
-  margin: 0 10px;
-  vertical-align: middle;
-}
-

@@ -1,361 +1,326 @@
+/* Estilo para o modal */
+.modal {
+  display: none; /* Inicialmente oculta o modal*/
+  position: fixed; /* Fixa a posição do model na janela de visualização*/
+  z-index: 1; /* Define a ordem de empilhamento ( camada mais alta) */
+  left: 0; /* Alinha o modal à esquerda da janela*/
+  top: 0; /* Alinha o modal ao topo da janela */
+  width: 100%; /* Define a largura do modal para cobrir toda a largura da janela*/
+  height: 100%; /* Define a altura do modal para cobrir toda a altura da janela*/
+  overflow: auto; /* Adiciona barras de rolagem quando o conteúdo do modal é maior que a tela*/
+  background-color: rgb(0,0,0); /*Cor de fundo preta o modal */
+  background-color: rgba(0,0,0,0.4); /* Faz o fundo semi-transparente para efeito de sobreposição*/
+  padding-top: 60px; /*Espaçamento no topo do modal*/
+}
+
+.modal-content {
+  background-color: #fefefe; /* Cor de fundo do conteúdo do modal*/
+  margin: 5% auto; /* Margem para centralzar o modal na tela verticalmente*/
+  padding: 20px; /* Espaçamento interno do conteúdo do modal */
+  border: 1px solid #888; /*Borda ao redor do modal*/
+  width: 80%; /* largura do conteúdo modal (pode ser ajustada conforme necessário)*/
+  text-align: center; /* Centraliza o texto dentro do modal*/
+}
+button {
+  padding: 15px 30px; /* Ajusta o padding para alterar o tamanho do botão */
+  font-size: 16px; /* Tamanho da fonte */
+  background-color: #4CAF50; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Cursor ao passar por cima */
+  margin: 10px; /* Margem entre os botões */
+}
+
+button:hover {
+  background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+.close {
+  color: #aaa; /* Define a cor do ícone de fechar */
+  float: right; /* Alinha o ícone à direita */
+  font-size: 28px; /*Define o tamanho do ícone */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* Altera a cor do texto ao passar o mouse ou focar*/
+  text-decoration: none; /* Remove a decoração de texto ( normalmente um sublinhado)*/
+  cursor: pointer; /*Altera o cursor para indicar que o elemento é clicável*/
+}
+/* Estiliza o botão "Sim" */
+#yesButton {
+  padding: 20px 40px; /* Exemplo de aumento do tamanho do botão */
+  font-size: 18px; /* Ajusta o tamanho da fonte */
+  background-color: green; /* Cor de fundo verde */
+  color:#fff; /* Cor do texto */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Cursor ao passar por cima */
+}
+
+#yesButton:hover {
+  background-color:#006016; /* Altera a cor de fundo ao passar o mouse por cima */
+}
+
+/* Estiliza o botão "Não" */
+#noButton {
+  padding: 20px 40px; /* Exemplo de aumento do tamanho do botão */
+  font-size: 18px; /* Ajusta o tamanho da fonte */
+  background-color: red; /* Cor de fundo branco */
+  color:#fff; /* Cor do texto */
+  border: none; /* Remove a borda */
+  cursor: pointer; /* Cursor ao passar por cima */
+}
+
+#noButton:hover {
+  background-color: #c82333; /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+
 body {
-  background-color: rgb(255, 255, 255);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: rgb(255, 255, 255); /* Define o fundo branco para o corpo do documento */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Define a fonte padrão para o corpo do documento */
 }
 
 .cabecalho {
-  width: 100%;
-  background-color: white;
-  height: 80px;
+  width: 100%; /* Define a largura máxima para o cabeçalho */
+  background-color: white; /* Define o fundo branco para o cabeçalho */
+  height: 80px; /* Define a altura do cabeçalho */
 }
 
 main {
-  margin: 0 auto;
-  width: 100%;
-  position: relative;
+  margin: 0 auto; /* Centraliza o conteúdo principal horizontalmente */
+  width: 100%; /* Define a largura máxima para o conteúdo principal */
+  position: relative; /* Define a posição relativa para o posicionamento de elementos filhos */
 }
 
 .cabecalho p {
-  color: black;
-  float: left;
-  font-size: 26px;
-  margin-top: 22px;
-  width: 32%;
-  font-weight: bold;
+  color: black; /* Define a cor do texto dentro do cabeçalho */
+  float: left; /* Faz com que os elementos flutuem para a esquerda */
+  font-size: 26px; /* Define o tamanho da fonte */
+  margin-top: 22px; /* Define a margem superior */
+  width: 32%; /* Define a largura do elemento para ocupar uma parte do cabeçalho */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
 }
 
 .logo {
-  float: left;
-  width: 8%;
+  float: left; /* Faz com que o logotipo flutue para a esquerda */
+  width: 8%; /* Define a largura do logotipo */
 }
 
 .header-2 {
-  background: rgb(31,177,73);
-  background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
-  width: 100%;
-  height: 35px;
+  background: rgb(31, 177, 73); /* Define um fundo verde escuro */
+  background: linear-gradient(90deg, rgba(31, 177, 73, 1) 0%, rgba(184, 224, 140, 1) 78%, rgb(246, 255, 236) 100%); /* Aplica um gradiente linear */
+  width: 100%; /* Define a largura máxima */
+  height: 35px; /* Define a altura do cabeçalho 2 */
 }
 
 .linkstopo ul {
-  text-align: right;
-  padding-right: 70px;
+  text-align: right; /* Alinha os itens da lista à direita */
+  padding-right: 70px; /* Adiciona um espaçamento à direita da lista */
 }
 
 .linkstopo ul li {
-  display: inline-block;
-  color: black;
-  margin-left: 30px;
-  height: 32px;
+  display: inline-block; /* Faz os itens da lista aparecerem em linha */
+  color: black; /* Define a cor do texto */
+  margin-left: 30px; /* Adiciona uma margem à esquerda entre os itens */
+  height: 32px; /* Define a altura dos itens da lista */
 }
 
 .linkstopo ul li:hover {
-  border-bottom: 3px solid rgb(255, 255, 93);
+  border-bottom: 3px solid rgb(255, 255, 93); /* Adiciona uma borda na parte inferior ao passar o mouse */
 }
 
 .linkstopo ul li a:hover {
-  color: rgb(255, 255, 93);
+  color: rgb(255, 255, 93); /* Define a cor do texto ao passar o mouse */
 }
 
 .linkstopo ul li a {
-  color: black;
-  text-decoration: none;
-  font-size: 23px;
-  font-weight: bold;
+  color: black; /* Define a cor do texto dos links */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  font-size: 23px; /* Define o tamanho da fonte dos links */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
 }
 
 .custom-shape-divider-top-1716987987 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
+  position: absolute; /* Define a posição absoluta */
+  top: 0; /* Alinha ao topo do elemento pai */
+  left: 0; /* Alinha à esquerda do elemento pai */
+  width: 100%; /* Define a largura máxima */
+  overflow: hidden; /* Esconde o conteúdo que excede a largura */
+  line-height: 0; /* Define a altura da linha como zero */
 }
 
 .custom-shape-divider-top-1716987987 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 700px;
+  position: relative; /* Define a posição relativa */
+  display: block; /* Define como bloco */
+  width: calc(100% + 1.3px); /* Calcula a largura */
+  height: 700px; /* Define a altura */
 }
 
 .custom-shape-divider-top-1716987987 .shape-fill {
-  fill: #85FF0045;
+  fill: #85FF0045; /* Preenche a forma com uma cor específica */
+}
+
+.link_pdf {
+  color: black; /* Define a cor do texto para os links do PDF */
+}
+
+.link_pdf:hover {
+  color: #006016; /* Define a cor do texto ao passar o mouse para os links do PDF */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Define a família da fonte ao passar o mouse */
 }
 
 .fundoverde {
-  top: 20px;
+  top: 20px; /* Define a posição superior */
 }
 
 .pfotosaut {
-  transform: translate(-1%, -1%);
-  z-index: 1;
-  text-align: center;
-  margin-top: 70px;
-  font-size: 3rem;
-  font-weight: bold;
+  transform: translate(-1%, -1%); /* Move o elemento em relação ao seu próprio tamanho */
+  z-index: 1; /* Define a ordem de empilhamento */
+  text-align: center; /* Alinha o texto ao centro */
+  margin-top: 70px; /* Adiciona margem superior */
+  font-size: 3rem; /* Define o tamanho da fonte */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
 }
 
 .escola {
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  width: 95%;
-  gap: 40px;
+  display: flex; /* Aplica o modelo de layout flexível */
+  flex-direction: row; /* Define a direção dos itens como linha */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  width: 95%; /* Define a largura */
+  gap: 40px; /* Define o espaçamento entre os itens */
 }
 
 .textoescola {
-  background-color: #1CBB3F;
-  flex: 1;
-  padding: 2%;
-  margin-top: 200px;
-  height: 20%;
+  background-color: #1CBB3F; /* Define a cor de fundo */
+  flex: 1; /* Define a flexibilidade do elemento */
+  padding: 2%; /* Adiciona preenchimento */
+  margin-top: 200px; /* Adiciona margem superior */
+  height: 20%; /* Define a altura */
 }
 
 .textoescola h1 {
-  font-size: 50px;
-  text-align: center;
+  font-size: 50px; /* Define o tamanho da fonte */
+  text-align: center; /* Alinha o texto ao centro */
+  margin-top: 10px; /* Adiciona margem superior */
 }
 
 .textoescola p {
-  font-size: 21px;
-  text-align: left;
+  font-size: 24px; /* Define o tamanho da fonte */
+  text-align: left; /* Alinha o texto à esquerda */
 }
 
 .ultimos {
-  flex: 1;
-  margin-top: 130px;
+  flex: 1; /* Define a flexibilidade do elemento */
+  margin-top: 143px; /* Adiciona margem superior */
+  font-size: small; /* Define o tamanho da fonte */
 }
 
 .ultimos p {
-  font-size: 20px;
+  font-size: 20px; /* Define o tamanho da fonte */
 }
 
 .ultimos h1 {
-  font-weight: bold;
+  font-weight: bold; /* Define a espessura da fonte como negrito */
 }
 
 .informes {
-  background-color: #A6A4A4;
-  height: auto;
-  width: 98%;
-  padding: 1%;
-  font-size: 18px;
-  margin-bottom: 8px;
+  background-color: #A6A4A4; /* Define a cor de fundo */
+  height: auto; /* Define a altura automática */
+  width: 98%; /* Define a largura */
+  padding: 1%; /* Adiciona preenchimento */
+  font-size: 18px; /* Define o tamanho da fonte */
+  margin-bottom: 8px; /* Adiciona margem inferior */
 }
 
 .curso {
-  width: 100%;
-  background-color: white;
-  height: 80px;
+  width: 100%; /* Define a largura máxima */
+  background-color: white; /* Define o fundo branco */
+  height: 80px; /* Define a altura */
 }
 
 .curso p {
-  color: black;
-  float: left;
-  font-size: 26px;
-  margin-top: 141px;
-  margin-left: 30px;
-  width: 40%;
-  font-weight: bold;
+  color: black; /* Define a cor do texto */
+  float: left; /* Faz com que o texto flutue para a esquerda */
+  font-size: 26px; /* Define o tamanho da fonte */
+  margin-top: 141px; /* Adiciona margem superior */
+  margin-left: 30px; /* Adiciona margem à esquerda */
+  width: 40%; /* Define a largura */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
 }
 
 .aninicio {
-  margin-top: 100px;
-  margin-left: 10px;
-  float: left;
-  width: 8%;
+  margin-top: 100px; /* Adiciona margem superior */
+  margin-left: 10px; /* Adiciona margem à esquerda */
+  float: left; /* Faz com que o elemento flutue para a esquerda */
+  width: 8%; /* Define a largura */
 }
 
 .imgcursos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Aplica o modelo de layout flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
 }
 
 .imgcursos nav {
-  margin: 30px;
-  text-align: center;
+  margin: 30px; /* Adiciona margem */
+  text-align: center; /* Alinha o texto ao centro */
 }
 
 .imgcursos a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  display: flex;
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  color: black; /* Define a cor do texto */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  display: flex; /* Aplica o modelo de layout flexível */
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Centraliza verticalmente */
 }
 
 .imgcursos img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-top: 30px;
+  display: block; /* Define como bloco */
+  max-width: 100%; /* Define a largura máxima */
+  height: auto; /* Define a altura automática */
+  margin-top: 30px; /* Adiciona margem superior */
 }
 
 .imgcursos p {
-  margin-top: 30px;
-  font-size: 20px;
-  color: black;
-  font-weight: bold;
-  text-align: center;
+  margin-top: 30px; /* Adiciona margem superior */
+  font-size: 20px; /* Define o tamanho da fonte */
+  color: black; /* Define a cor do texto */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  text-align: center; /* Alinha o texto ao centro */
 }
 
 footer {
-  margin-top: 100px;
-  background-color: #898989;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+  margin-top: 100px; /* Adiciona margem superior */
+  background-color: #898989; /* Define a cor de fundo */
+  color: white; /* Define a cor do texto */
+  padding: 20px 0; /* Adiciona preenchimento */
+  text-align: center; /* Alinha o texto ao centro */
 }
 
 .footer-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  display: flex; /* Aplica o modelo de layout flexível */
+  justify-content: space-around; /* Distribui os itens uniformemente ao redor */
+  align-items: center; /* Centraliza verticalmente */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
 }
 
 .footer-section {
-  margin: 10px;
+  margin: 10px; /* Adiciona margem */
 }
 
 .footer-image {
-  width: 500px;
-  height: 100px;
+  width: 500px; /* Define a largura */
+  height: 100px; /* Define a altura */
 }
 
 .footer-section h4 {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Adiciona margem inferior */
 }
 
 .footer-section p {
-  margin: 5px 0;
+  margin: 5px 0; /* Adiciona margem */
 }
-
-.footer-section a img {
-  width: 50px;
-  height: auto;
-  margin: 0 5px;
-  transition: transform 0.3s;
-}
-
-.footer-section a img:hover {
-  transform: scale(1.1);
-}
-
-/* Slider Container */
-.slider {
-  width: 100%;
-  max-width: 800px;
-  height: 500px;
-  position: relative;
-  margin: auto;
-  overflow: hidden;
-}
-
-/* Slides Container */
-.slides {
-  display: flex;
-  width: 500%;
-  height: 100%;
-  animation: slideAnimation 25s infinite;
-}
-
-/* Slide */
-.slide {
-  width: 20%;
-  transition: 0.6s;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-
-/* Radio Buttons */
-input[type="radio"] {
-  display: none;
-}
-
-/* Automatic Navigation */
-.navigation-auto {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: -40px;
-}
-
-.navigation-auto div {
-  border: 2px solid white;
-  padding: 5px;
-  border-radius: 50%;
-  transition: 1s;
-}
-
-#radio1:checked ~ .first {
-  margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-  margin-left: -100%;
-}
-
-#radio3:checked ~ .first {
-  margin-left: -200%;
-}
-
-#radio4:checked ~ .first {
-  margin-left: -300%;
-}
-
-#radio5:checked ~ .first {
-  margin-left: -400%;
-}
-
-/* Manual Navigation */
-.navigation-manual {
-  position: absolute;
-  width: 100%;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-
-.manual-btn {
-  border: 2px solid white;
-  padding: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 1s;
-  margin: 0 5px;
-}
-
-.manual-btn:hover {
-  background: white;
-}
-
-/* Automatic Navigation with Animation */
-#radio1:checked ~ .navigation-auto .auto-btn1,
-#radio2:checked ~ .navigation-auto .auto-btn2,
-#radio3:checked ~ .navigation-auto .auto-btn3,
-#radio4:checked ~ .navigation-auto .auto-btn4,
-#radio5:checked ~ .navigation-auto .auto-btn5 {
-  background: white;
-}
-
-/* Animation for Slides */
-@keyframes slideAnimation {
-  0% { margin-left: 0; }
-  20% { margin-left: 0; }
-  25% { margin-left: -100%; }
-  45% { margin-left: -100%; }
-  50% { margin-left: -200%; }
-  70% { margin-left: -200%; }
-  75% { margin-left: -300%; }
-  95% { margin-left: -300%; }
-  100% { margin-left: -400%; }
-}
-

@@ -1,183 +1,181 @@
+
+/* Definições gerais para o corpo da página */
 body {
-  background-color: white;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: white; /* Cor de fundo branca */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Família de fontes padrão */
 }
 
+/* Estilo para o cabeçalho principal */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
+  display: flex; /* Exibição flexível para alinhar itens */
+  justify-content: space-between; /* Distribui o espaço entre os elementos */
+  align-items: center; /* Alinha os itens verticalmente */
+  padding: 10px; /* Espaçamento interno */
 }
 
+/* Estilo para a lista de links no cabeçalho */
 .lkmt ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin-right: 100px;
+  display: flex; /* Exibição flexível para alinhar itens */
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o preenchimento padrão */
+  margin-right: 100px; /* Margem à direita */
 }
 
+/* Estilo para os links na lista */
 .lkmt ul li a:hover {
-  color: black;
+  color: black; /* Cor do texto ao passar o mouse */
 }
 
 .lkmt ul li {
-  margin-left: 100px;
-  font-weight: bold;
-  font-size: 20px;
+  margin-left: 100px; /* Margem à esquerda */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 20px; /* Tamanho da fonte */
 }
 
 .lkmt ul li:first-child {
-  margin-left: 0;
+  margin-left: 0; /* Remove a margem à esquerda do primeiro item */
 }
 
 .lkmt a {
-  text-decoration: none;
-  color: #1B9736;
+  text-decoration: none; /* Remove sublinhado dos links */
+  color: #1B9736; /* Cor do texto */
 }
 
 .lgnome {
-  margin-left: 10px;
+  margin-left: 10px; /* Margem à esquerda */
 }
 
+/* Segundo cabeçalho com gradiente de fundo */
 .header-2 {
-  background: rgb(31,177,73);
-  background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%);
-  width: 100%;
-  height: 35px;
+  background: rgb(31,177,73); /* Cor de fundo */
+  background: linear-gradient(90deg, rgba(31,177,73,1) 0%, rgba(184,224,140,1) 78%, rgb(246, 255, 236) 100%); /* Gradiente linear */
+  width: 100%; /* Largura total */
+  height: 35px; /* Altura */
 }
 
+/* Container principal */
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-top: 100px;
+  display: flex; /* Exibição flexível para alinhar itens */
+  flex-direction: column; /* Direção das colunas */
+  align-items: center; /* Alinha os itens centralmente */
+  width: 100%; /* Largura total */
+  margin-top: 0; /* Margem superior */
 }
 
+/* Container para procedimentos com fundo colorido */
 .procedimento-container {
-  display: flex;
-  width: 100%;
-  background-color: #85FF0033;
-  color: black;
-  padding: 20px;
-  box-sizing: border-box;
+  display: flex; /* Exibição flexível para alinhar itens */
+  width: 100%; /* Largura total */
+  background-color: #85FF0033; /* Cor de fundo com transparência */
+  color: black; /* Cor do texto */
+  padding: 15px; /* Preenchimento interno */
+  box-sizing: border-box; /* Modelo de caixa */
 }
 
 .procedimento-container .procedimento {
-  flex: 1;
-  padding-right: 20px;
+  flex: 1; /* Cresce para ocupar o espaço disponível */
+  padding-right: 20px; /* Preenchimento à direita */
 }
 
 .procedimento-container img {
-  flex: 1;
-  max-width: 100%;
-  height: 60%;
+  flex: 1; /* Cresce para ocupar o espaço disponível */
+  max-width: 100%; /* Largura máxima */
+  height: 60%; /* Altura */
 }
 
+/* Área de animação */
+#animacao {
+  padding: 5%; /* Preenchimento */
+  height: 500px; /* Altura */
+}
+
+/* Wrapper de conteúdo */
 .content-wrapper {
-  display: flex;
-  width: 100%;
-  margin-top: 30px;
-  box-sizing: border-box;
+  display: flex; /* Exibição flexível para alinhar itens */
+  width: 100%; /* Largura total */
+  margin-top: 5px; /* Margem superior */
+  box-sizing: border-box; /* Modelo de caixa */
 }
 
+/* Estilos para as seções de inscrição e matrícula */
 .inscricao, .matricula {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
+  flex: 1; /* Cresce para ocupar o espaço disponível */
+  padding: 15px; /* Preenchimento interno */
+  box-sizing: border-box; /* Modelo de caixa */
 }
 
 .inscricao {
-  margin-right: 10px;
+  margin-right: 10px; /* Margem à direita */
 }
 
 .matricula {
-  margin-left: 10px;
+  margin-left: 10px; /* Margem à esquerda */
 }
 
+/* Estilos para títulos e parágrafos nas seções */
 nav h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
+  font-size: 30px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 10px; /* Margem inferior */
 }
 
-#in{
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 80px;
-}
-
-#mt{
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 80px;
+#in, #mt {
+  font-size: 30px; /* Tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 10px; /* Margem inferior */
+  margin-top: 80px; /* Margem superior */
 }
 
 nav p {
-  font-size: 27px;
+  font-size: 26px; /* Tamanho da fonte */
 }
 
+/* Container para listas de inscrição e matrícula */
 .inscricao .list-container, .matricula .list-container {
-  background-color: rgb(255, 182, 122);
-  padding: 10px;
-  border-radius: 30px;
-  margin-top: 50px;
-}
-
-#transparente{
-  color: transparent;
+  background-color: #85FF0033; /* Cor de fundo com transparência */
+  padding: 10px; /* Preenchimento interno */
+  border-radius: 10px; /* Raio da borda */
+  margin-top: 50px; /* Margem superior */
+  max-height: 350px; /* Altura máxima */
 }
 
 .inscricao li, .matricula li {
-  font-size: 2em;
-  margin-bottom: 5px;
+  font-size: 25px; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Margem inferior */
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
+/* Estilos para o rodapé */
 footer {
-  background-color: #898989;
-  padding: 20px 0;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  margin-top: 100px;
+  margin-top: 100px; /* Margem superior */
+  background-color: #898989; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px 0; /* Preenchimento interno */
+  text-align: center; /* Alinhamento do texto */
 }
 
+/* Container do rodapé com exibição flexível */
 .footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 40px;
-  flex-wrap: wrap;
+  display: flex; /* Exibição flexível para alinhar itens */
+  justify-content: space-around; /* Distribui o espaço entre os elementos */
+  align-items: center; /* Alinha os itens verticalmente */
+  flex-wrap: wrap; /* Quebra de linha */
 }
 
+/* Seções individuais do rodapé */
 .footer-section {
-  flex: 1;
-  min-width: 200px;
+  margin: 10px; /* Margem */
+}
+
+/* Imagem do rodapé */
+.footer-image {
+  width: 500px; /* Largura */
+  height: 100px; /* Altura */
 }
 
 .footer-section h4 {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Margem inferior */
 }
 
 .footer-section p {
-  margin: 5px 0;
+  margin: 5px 0; /* Margem */
 }
-
-.footer-section a img {
-  width: 48px;
-  height: 48px;
-  margin: 0 10px;
-  vertical-align: middle;
-}
-
-

@@ -1,77 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- Define o idioma da página como português do Brasil -->
 <head>
   <meta charset="UTF-8">
+  <!-- Define a codificação de caracteres como UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Configura a visualização para garantir que a página seja responsiva -->
   <title>Fale conosco</title>
+  <!-- Define o título da página que aparecerá na aba do navegador -->
   <link rel="stylesheet" href="css/faleconosco.css">
+  <!-- Vincula um arquivo CSS externo chamado 'faleconosco.css' para estilização -->
 </head>
 <body>
+  <!-- Início do corpo do documento HTML -->
   <header class="cmcmatricula">
+    <!-- Seção de cabeçalho com a classe 'cmcmatricula' -->
     <main id="cmcmt">
-        <div class="header">
-            <div class="lgnome">
-                <img src="img/logonome.png" alt="Logonome">
-            </div>
-            <div class="lkmt">
-                <ul>
-                    <li>
-                        <a href="Inicio.html">Voltar para o início</a>
-                    </li>
-                </ul>
-            </div>
+      <!-- Elemento principal com o ID 'cmcmt' -->
+      <div class="header">
+        <!-- Div com a classe 'header' -->
+        <div class="lgnome">
+          <!-- Div com a classe 'lgnome' -->
+          <img src="img/logonome.png" alt="Logonome">
+          <!-- Imagem com o caminho 'img/logonome.png' e texto alternativo 'Logonome' -->
         </div>
+        <div class="lkmt">
+          <!-- Div com a classe 'lkmt' -->
+          <ul>
+            <!-- Lista não ordenada -->
+            <li>
+              <!-- Item da lista -->
+              <a href="Inicio.html">Voltar para o início</a>
+              <!-- Link que redireciona para 'Inicio.html' com o texto 'Voltar para o início' -->
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
-</header>
-<main>
-  <nav>
-    <h1> Fale conosco:</h1>
-  </nav>
-  <div class="container">
-    <div class="form-container">
-      <form action="#" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="first-name" name="first-name" required>
-        
-        <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="last-name" name="last-name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="mensagem">Sua Mensagem:</label>
-        <textarea id="mensagem" name="message" rows="4" required></textarea>
-        
-        <button type="submit">Enviar</button>
-      </form>
+  </header>
+  <main>
+    <!-- Elemento principal -->
+    <nav>
+      <!-- Elemento de navegação -->
+      <h1>Fale conosco:</h1>
+      <!-- Cabeçalho de nível 1 com o texto 'Fale conosco:' -->
+    </nav>
+    <div class="container">
+      <!-- Div com a classe 'container' para agrupar o conteúdo -->
+      <div class="form-container">
+        <!-- Div com a classe 'form-container' -->
+        <form action="#" method="post">
+          <!-- Formulário com o método 'post' -->
+          <label for="nome">Nome:</label>
+          <!-- Rótulo para o campo 'nome' -->
+          <input type="text" id="first-name" name="first-name" required>
+          <!-- Campo de entrada de texto para o 'nome', com ID 'first-name' e obrigatório -->
+          
+          <label for="sobrenome">Sobrenome:</label>
+          <!-- Rótulo para o campo 'sobrenome' -->
+          <input type="text" id="last-name" name="last-name" required>
+          <!-- Campo de entrada de texto para o 'sobrenome', com ID 'last-name' e obrigatório -->
+          
+          <label for="email">Email:</label>
+          <!-- Rótulo para o campo 'email' -->
+          <input type="email" id="email" name="email" required>
+          <!-- Campo de entrada de email, com ID 'email' e obrigatório -->
+          
+          <label for="mensagem">Sua Mensagem:</label>
+          <!-- Rótulo para o campo 'mensagem' -->
+          <textarea id="mensagem" name="message" rows="4" required></textarea>
+          <!-- Área de texto para a mensagem, com ID 'mensagem', 4 linhas e obrigatória -->
+          
+          <button type="submit">Enviar</button>
+          <!-- Botão de envio do formulário -->
+        </form>
+      </div>
+      <div class="photo-container">
+        <!-- Div com a classe 'photo-container' -->
+        <img src="img/animação faleconosco.png" alt="Foto de Contato">
+        <!-- Imagem com o caminho 'img/animação faleconosco.png' e texto alternativo 'Foto de Contato' -->
+      </div>
     </div>
-    <div class="photo-container">
-      <img src="img/animação faleconosco.png" alt="Foto de Contato">
+  </main>
+  <footer>
+    <!-- Início do rodapé -->
+    <div class="footer-container">
+      <!-- Div com a classe 'footer-container' para agrupar o conteúdo do rodapé -->
+      <div class="footer-section">
+        <!-- Seção do rodapé -->
+        <h4>Escola Maria Carmem</h4>
+        <!-- Cabeçalho de nível 4 com o nome da escola -->
+        <p>Rua Maria Ferreira, 150 - Pajuçara</p>
+        <!-- Parágrafo com o endereço da escola -->
+        <p>Maracanaú/CE, 61932-450</p>
+        <!-- Parágrafo com a cidade e o CEP da escola -->
+      </div>
+      <div class="footer-section">
+        <h4>HORÁRIO DE ATENDIMENTO:</h4>
+        <!-- Cabeçalho de nível 4 com o título 'HORÁRIO DE ATENDIMENTO:' -->
+        <p>Segunda a Sexta Manhã: 08:00h - 12:00h</p>
+        <!-- Parágrafo com o horário de atendimento da manhã -->
+        <p>Segunda a Sexta Tarde: 13:00h - 16:00h</p>
+        <!-- Parágrafo com o horário de atendimento da tarde -->
+      </div>
+      <div class="footer-section">
+        <h4>Redes Sociais</h4>
+        <!-- Cabeçalho de nível 4 com o título 'Redes Sociais' -->
+        <a href="https://wa at.me/+5585981447501" target="_blank">
+          <!-- Link para o WhatsApp com o alvo configurado para abrir em uma nova aba -->
+          <img src="img/whatsaap.png" alt="Whatsaap">
+          <!-- Imagem do ícone do WhatsApp -->
+        </a>
+        <a href="https://www.instagram.com/epmariacarmemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+          <!-- Link para o Instagram com o alvo configurado para abrir em uma nova aba -->
+          <img src="img/instagram.png" alt="Instagram">
+          <!-- Imagem do ícone do Instagram -->
+        </a>
+      </div>
     </div>
-  </div>
-</main>
-<footer>
-  <div class="footer-container">
-      <div class="footer-section">
-          <h4>Escola Maria Carmem</h4>
-          <p>Rua Maria Ferreira, 150 - Pajuçara</p>
-          <p>Maracanaú/CE, 61932-450</p>
-      </div>
-      <div class="footer-section">
-          <h4>HORÁRIO DE ATENDIMENTO:</h4>
-          <p>Segunda a Sexta Manhã: 08:00h - 12:00h</p>
-          <p>Segunda a Sexta Tarde: 13:00h - 16:00h</p>
-      </div>
-      <div class="footer-section">
-          <h4>Redes Sociais</h4>
-          <a href="https://wa.me/+5585981447501" target="_blank">
-              <img src="img/whatsaap.png" alt="Whatsaap">
-          </a>
-          <a href="https://www.instagram.com/epmariacarmemoficial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-              <img src="img/instagram.png" alt="Instagram">
-          </a>
-      </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
+<!-- Fim do documento HTML -->

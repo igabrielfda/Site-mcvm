@@ -28,6 +28,7 @@
         </main>
     </header>
     <main>
+
         <div class="header-2">
             <div class="linkstopo">
                 <!-- Links do topo do site -->
@@ -36,7 +37,7 @@
                     <li><a href="aaaluno.html">Área do aluno</a></li>
                     <li><a href="institucional.html">Institucional</a></li>
                     <li><a href="Faleconosco.html">Fale conosco</a></li>
-                    <li><a href="Cadastroaluno.html">Cadastro aluno</a></li>
+                    <li><a href="login.html">Acesso aluno</a></li>
                 </ul>
             </div>
         </div>
@@ -63,13 +64,13 @@
 
             <!-- Slides com imagens -->
             <div class="slide first">
-                <img src="img/ft1.jpg" alt="Imagem 1">
+                <img src="img/fectec.jpg" alt="Imagem 1">
             </div>
             <div class="slide">
-                <img src="img/ft2.jpg" alt="Imagem 2">
+                <img src="img/iterclasse.jpg" alt="Imagem 2">
             </div>
             <div class="slide">
-                <img src="img/ft3.jpg" alt="Imagem 3">
+                <img src="img/gnmpb.jpg" alt="Imagem 3">
             </div>
             <div class="slide">
                 <img src="img/ft4.jpg" alt="Imagem 4">
@@ -114,28 +115,40 @@
             <!-- Seção de últimos informes -->
             <article>
                 <nav class="informes">
-                    <p>No dia 10 de março de 2011 surgiu a EEEP Maria Carmem Vieira Moreira, na época foi a segunda escola
-                       profissional implantada na cidade ofertando cursos técnicos, das 7 às 17 horas.
+                    <p>Segue abaixo link para o acesso ao regulamento geral dos jogos interclasses 2024.<br>
+                        <strong>Confira:</strong>
+                        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:08192ab9-f7db-406c-94ad-c75f259dbaf3" class="link_pdf">Acesse aqui</a>
                     </p>
                 </nav>
                 <nav class="informes">
-                    <p>No dia 10 de março de 2011 surgiu a EEEP Maria Carmem Vieira Moreira, na época foi a segunda escola
-                       profissional implantada na cidade ofertando cursos técnicos, das 7 às 17 horas.
+                    <p>Segue abaixo links para confecção do banner - FECTEC 2024.<br>
+                        <strong>Confira:</strong>
+                        <a href="https://www.canva.com/design/DAGCV6R3TXA/UNQCm1ewLp4dQs-J9iXdQQ/view?utm_content=DAGCV6R3TXA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview" class="link_pdf">Edição no Canva</a> /
+                        <a href="https://docs.google.com/presentation/d/1onTXgrs6oeNvzsG8lhxAuXVhJSQptS0j/edit?usp=sharing&ouid=117147033723179664046&rtpof=true&sd=true" class="link_pdf">Edição no Office (PowerPoint/Apresentações)</a>
                     </p>
                 </nav>
                 <nav class="informes">
-                    <p>No dia 10 de março de 2011 surgiu a EEEP Maria Carmem Vieira Moreira, na época foi a segunda escola
-                       profissional implantada na cidade ofertando cursos técnicos, das 7 às 17 horas.
+                    <p>A Comissão Organizadora da XI FEIRA CIENTÍFICA, TECNOLÓGICA E CULTURAL MARIA CARMEM VIEIRA MOREIRA (FeCTeC) torna pública o Edital XI FeCTec 2024.<br>
+                        <strong>Confira:</strong>
+                        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:21330d20-0e45-4cac-bca4-4c96202202c5" class="link_pdf">Acesse aqui</a>
                     </p>
                 </nav>
                 <nav class="informes">
-                    <p>No dia 10 de março de 2011 surgiu a EEEP Maria Carmem Vieira Moreira, na época foi a segunda escola
-                       profissional implantada na cidade ofertando cursos técnicos, das 7 às 17 horas.
+                    <p> Foi divulgado pela secretaria da escola Maria Carmem as fichas para matrícula 2023.<br>
+                        <strong>Confira:</strong>
+                        <a href=https://drive.google.com/file/d/1cy3tRVcEEQSIWeOZqt94T_Fvd2oCUnFu/view class="link_pdf" class="link_pdf">Ficha matrícula</a> /
+                        <a href="https://drive.google.com/file/d/14X3au-TaDpSU0XkW68U8PMhsKyJybOZi/view" class="link_pdf">Ficha Médica</a> /
+                        <a href="https://drive.google.com/file/d/1_GRbebBjS0vbffJzedCA8INQIPUuMpMN/view" class="link_pdf">Termo de autorização</a> /
+                        <a href="https://drive.google.com/file/d/1cNxqx4waCihpn3hAm_Ru3GyFEXmkM4Cr/view" class="link_pdf">Termo Escolar</a>
                     </p>
                 </nav>
             </article>
+            <button id="feedbackButton">ESTA INFROMAÇÃO FOI ÚTIL?</button> <!-- Botão de feedback-->
         </section>
     </main>
+    
+    
+
     <main class="curso">
         <div>
             <div class="aninicio">
@@ -173,12 +186,20 @@
             </a>
         </nav>
     </main>
+    <!--Div principal para o modal-->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content"> <!--Div para o conteúdo do modal-->
+            <span class="close">&times;</span> <!--Span que representa o botão de fechar o modal (x)-->
+            <h2>Feedback</h2> <!--Titulo do modal-->
+            <p>Esta informação foi útil?</p> <!--Parágrafo que pergunta se a informação foi útil-->
+            <button id="yesButton">Sim</button> <!--Botão para resposta positiva-->
+            <button id="noButton">Não</button> <!--Botão para resposta negativa-->
+        </div>
+    </div>
+    
+    
     <footer>
         <div class="footer-container">
-            <div class="footer-section">
-                <!-- Logo no rodapé -->
-                <img src="img/logonome.png" alt="logonome" class="footer-image">
-            </div>
             <div class="footer-section">
                 <h4>Escola Maria Carmem</h4>
                 <p>Rua Maria Ferreira, 150 - Pajuçara</p>
@@ -200,5 +221,42 @@
             </div>
         </div>
     </footer>
+    <script>
+        // Obter elementos do DOM
+        var modal = document.getElementById("feedbackModal"); //obtém o modal pelo ID
+        var btn = document.getElementById("feedbackButton"); //obtém o botão que abre o modal pelo ID
+        var span = document.getElementsByClassName("close")[0]; //obtém o elemento de fechar modal (primeiro)
+        var yesBtn = document.getElementById("yesButton"); // obtém o botão "sim" pelo ID
+        var noBtn = document.getElementById("noButton"); //obtém o botão "não" pelo ID
+    
+        // Quando o usuário clicar no botão, abrir o modal
+        btn.onclick = function() {
+            modal.style.display = "block"; // Exibe o modal ao definir o estilo para "block"
+        }
+    
+        // Quando o usuário clicar no botão de fechar (x), fechar o modal
+        span.onclick = function() {
+            modal.style.display = "none"; // Oculta o modal  ao definir o estilo para "none"
+        }
+    
+        // Quando o usuário clicar em "Sim"
+        yesBtn.onclick = function() {
+            alert("Obrigado pelo seu feedback positivo!"); // Exibe um alerta de feedback positivo
+            modal.style.display = "none"; // Oculta o modal ao definir o estilo para "none"
+        }
+    
+        // Quando o usuário clicar em "Não"
+        noBtn.onclick = function() {
+            alert("Obrigado pelo seu feedback! Vamos melhorar."); // Exibe um alerta de feedback negatico
+            modal.style.display = "none"; // Oculta o modal ao definir o estilo para "none"
+        }
+    
+        // Quando o usuário clicar em qualquer lugar fora do modal, fechar o modal
+        window.onclick = function(event) {
+            if (event.target == modal) { // Verifica se o clique foi fora do  conteúdo do modal
+                modal.style.display = "none"; //Oculta o modal ao definir o estilo para "none"
+            }
+        }
+    </script>
 </body>
 </html>

@@ -1,0 +1,114 @@
+/* Slider Container */
+.slider {
+  width: 100%; /* Largura total */
+  max-width: 800px; /* Largura máxima */
+  height: 500px; /* Altura */
+  position: relative; /* Posição relativa para posicionamento dos elementos filhos */
+  margin: auto; /* Centraliza horizontalmente */
+  overflow: hidden; /* Esconde conteúdo que extrapola as dimensões do container */
+}
+
+/* Slides Container */
+.slides {
+  display: flex; /* Exibição flexível para alinhar os slides */
+  width: 500%; /* Largura total dos slides (5 slides visíveis de uma vez) */
+  height: 100%; /* Altura dos slides */
+  animation: slideAnimation 25s infinite; /* Animação de deslize infinito dos slides */
+}
+
+/* Slide */
+.slide {
+  width: 20%; /* Largura de cada slide (5 slides ocupam 100% da largura) */
+  transition: 0.6s; /* Transição suave */
+}
+
+.slide img {
+  width: 100%; /* Imagem ocupa 100% da largura do slide */
+  height: 100%; /* Imagem ocupa 100% da altura do slide */
+}
+
+/* Radio Buttons (controles invisíveis para navegação) */
+input[type="radio"] {
+  display: none; /* Oculta os botões de rádio */
+}
+
+/* Automatic Navigation (navegação automática dos slides) */
+.navigation-auto {
+  position: absolute; /* Posição absoluta em relação ao slider */
+  width: 100%; /* Largura total */
+  display: flex; /* Exibição flexível para alinhar os botões */
+  justify-content: center; /* Centraliza horizontalmente os botões */
+  margin-top: -40px; /* Alinha os botões acima do slider */
+}
+
+.navigation-auto div {
+  border: 2px solid white; /* Borda dos botões */
+  padding: 5px; /* Preenchimento interno dos botões */
+  border-radius: 50%; /* Borda circular */
+  transition: 1s; /* Transição suave */
+}
+
+/* Controle de navegação automática (mostra o botão ativo) */
+#radio1:checked ~ .first {
+  margin-left: 0; /* Mostra o primeiro slide */
+}
+
+#radio2:checked ~ .first {
+  margin-left: -100%; /* Mostra o segundo slide */
+}
+
+#radio3:checked ~ .first {
+  margin-left: -200%; /* Mostra o terceiro slide */
+}
+
+#radio4:checked ~ .first {
+  margin-left: -300%; /* Mostra o quarto slide */
+}
+
+#radio5:checked ~ .first {
+  margin-left: -400%; /* Mostra o quinto slide */
+}
+
+/* Manual Navigation (navegação manual dos slides) */
+.navigation-manual {
+  position: absolute; /* Posição absoluta em relação ao slider */
+  width: 100%; /* Largura total */
+  margin-top: -40px; /* Alinha os botões acima do slider */
+  display: flex; /* Exibição flexível para alinhar os botões */
+  justify-content: center; /* Centraliza horizontalmente os botões */
+}
+
+.manual-btn {
+  border: 2px solid white; /* Borda dos botões */
+  padding: 5px; /* Preenchimento interno dos botões */
+  border-radius: 50%; /* Borda circular */
+  cursor: pointer; /* Altera o cursor ao passar sobre */
+  transition: 1s; /* Transição suave */
+  margin: 0 5px; /* Margem entre os botões */
+}
+
+.manual-btn:hover {
+  background: white; /* Fundo branco ao passar o mouse */
+}
+
+/* Indicação de navegação automática com animação */
+#radio1:checked ~ .navigation-auto .auto-btn1,
+#radio2:checked ~ .navigation-auto .auto-btn2,
+#radio3:checked ~ .navigation-auto .auto-btn3,
+#radio4:checked ~ .navigation-auto .auto-btn4,
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background: white; /* Cor de fundo dos botões ativos */
+}
+
+/* Animação dos Slides */
+@keyframes slideAnimation {
+  0% { margin-left: 0; } /* Início - primeiro slide visível */
+  20% { margin-left: 0; } /* Primeira transição */
+  25% { margin-left: -100%; } /* Segundo slide visível */
+  45% { margin-left: -100%; } /* Segunda transição */
+  50% { margin-left: -200%; } /* Terceiro slide visível */
+  70% { margin-left: -200%; } /* Terceira transição */
+  75% { margin-left: -300%; } /* Quarto slide visível */
+  95% { margin-left: -300%; } /* Quarta transição */
+  100% { margin-left: -400%; } /* Último slide visível */
+}
